@@ -1,0 +1,60 @@
+---
+title: "Analysis"
+author: "Constien"
+date: "`r Sys.Date()`"
+output:
+  html_documnet:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Library Loading
+
+```{r}
+library(janitor)
+library(zeallot)
+library(tidyverse)
+library(magrittr)
+```
+
+## Read Analysis
+
+```{r}
+accession.ages = (
+  read.csv("SraRunTable.csv")
+  |>  clean_names()
+  |>  filter(assay_type == "ncRNA-Seq" & organism == "Homo sapiens")
+  %>% { set_names(.$age |> str_extract("[^_]+") |> as.numeric(), .$run) }
+)
+
+(
+  read.table("counts.txt.summary", header = TRUE, row.names = 1)
+  |>  rename_with(str_extract, pattern = "[^_]+")
+  |>  filter_all(any_vars(. != 0))
+  |>  t()
+  |>  as.data.frame()
+  |>  rownames_to_column()
+  |>  mutate(age = accession.ages[rowname])
+ %->% counts
+  |>  pivot_longer(-c(rowname, age))
+  |>  ggplot(aes(x = str_glue("{rowname} ({age})"), y = value, fill = name))
+   +  geom_bar(stat = "identity", position = "dodge")
+   +  scale_x_discrete(limits = counts |> arrange(desc(age)) |> str_glue_data("{rowname} ({age})"))
+   +  scale_y_log10(labels = scales::comma)
+   +  labs(title = "Read Assignments", x = "Sample (Age)", y = "Count", fill = "Assignment")
+   +  theme(plot.title = element_text(hjust = 0.5))
+   +  coord_flip()
+)
+```
+
+
+```{r}
+(
+  read.table("counts.txt", header = TRUE, row.names = 1)
+  |> rename_with(str_extract, pattern = "[^_]+", .cols = ends_with("bam"))
+  |> select(!(Geneid:Length))
+)
+```
