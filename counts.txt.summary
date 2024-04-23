@@ -1,0 +1,15 @@
+Status	SRR8575347_trimmedAligned.sortedByCoord.out.bam	SRR8575348_trimmedAligned.sortedByCoord.out.bam	SRR8575349_trimmedAligned.sortedByCoord.out.bam	SRR8575350_trimmedAligned.sortedByCoord.out.bam	SRR8575351_trimmedAligned.sortedByCoord.out.bam	SRR8575352_trimmedAligned.sortedByCoord.out.bam	SRR8575385_trimmedAligned.sortedByCoord.out.bam	SRR8575386_trimmedAligned.sortedByCoord.out.bam	SRR8575387_trimmedAligned.sortedByCoord.out.bam	SRR8575388_trimmedAligned.sortedByCoord.out.bam	SRR8575389_trimmedAligned.sortedByCoord.out.bam	SRR8575390_trimmedAligned.sortedByCoord.out.bam	SRR8575391_trimmedAligned.sortedByCoord.out.bam	SRR8575392_trimmedAligned.sortedByCoord.out.bam	SRR8575393_trimmedAligned.sortedByCoord.out.bam	SRR8575394_trimmedAligned.sortedByCoord.out.bam	SRR8575409_trimmedAligned.sortedByCoord.out.bam	SRR8575410_trimmedAligned.sortedByCoord.out.bam
+Assigned	19484200	2039759	8722683	9532570	12994642	13838323	7666458	7825037	4206322	7874268	10676903	7778780	2038583	20240349	12055159	10916319	13991822	10331004
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	87082254	7980986	36121787	35054398	150573367	86450987	30719693	31627905	13940174	31321156	55939322	31719992	7530207	100850418	60407522	43546768	70495829	53356534
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	31041083	3439140	20451736	22358818	24151479	21471160	17400926	18895333	8311711	16474173	19996798	12910263	3770288	40040453	18239924	19150144	20087405	14842684
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	1489557	122443	398521	433796	2081079	1802069	405763	400849	182281	405919	756202	621049	111634	1274541	1286343	736749	1260030	825837
