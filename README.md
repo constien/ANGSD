@@ -1,0 +1,1 @@
+This repository comprises the entirety of my submission for the final project of CMPB 5004: Analysis of Next Generation Sequencing Data. All relevant information can be found in the `Analysis.html` file.
